@@ -3,6 +3,8 @@
 
 > English | [中文](README-CN.md)
 
+:exclamation: The test shows a good result on Chinese TTS with a Chinese reference audio, but bad results on Chinese TTS with a English reference audio (Cross language style transferring).
+
 :exclamation: Now we provide inferencing code and pre-training models. You could generate any text sounds you want.
 
 :star: The model training only uses the corpus of neutral emotion, and does not use any strongly emotional speech.

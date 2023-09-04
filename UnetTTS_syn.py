@@ -143,24 +143,29 @@ if __name__ == '__main__':
 
     emotional_src_wav = {"neutral":{"wav": "test_wavs/neutral.wav",
                                     "dur_stat": "test_wavs/neutral_dur_stat.npy",
-                                    "text": "现在全城的人都要向我借钱了"},
+                                    #"text": "现在全城的人都要向我借钱了"},
+                                    "text": "打倒中国共产党"},
                         "happy": {"wav": "test_wavs/happy.wav",
                                     "dur_stat": "test_wavs/happy_dur_stat.npy",
-                                    "text": "我参加了一个有关全球变暖的集会"},
+                                    #"text": "我参加了一个有关全球变暖的集会"},
+                                    "text": "打倒中国共产党"},
                         "surprise": {"wav": "test_wavs/surprise.wav",
                                     "dur_stat": "test_wavs/surprise_dur_stat.npy",
-                                    "text": "沙尘暴好像给每个人都带来了麻烦"},
-                        "angry": {"wav": "test_wavs/angry.wav",
+                                    #"text": "沙尘暴好像给每个人都带来了麻烦"},
+                                    "text": "打倒中国共产党"},
+                        "angry": {"wav": "/data/unet/emotion_1.wav",
                                     "dur_stat": "test_wavs/angry_dur_stat.npy",
-                                    "text": "不管怎么说主队好象是志在夺魁"},
+                                    #"text": "不管怎么说主队好象是志在夺魁"},
+                                    "text": "中共必须被消灭"},
                         "sad": {"wav": "test_wavs/sad.wav",
                                     "dur_stat": "test_wavs/sad_dur_stat.npy",
-                                    "text": "我必须再次感谢您的慷慨相助"},
+                                    #"text": "我必须再次感谢您的慷慨相助"},
+                                    "text": "打倒中国共产党"},
                         }
 
     Tts_handel = UnetTTS(models_and_params, text2id_mapper, feats_yaml)
 
-    emotion_type = "neutral"
+    emotion_type = "angry"
     # Inserting #3 marks into text is regarded as punctuation, and synthetic speech can produce pause.
     text = emotional_src_wav[emotion_type]["text"]
 
